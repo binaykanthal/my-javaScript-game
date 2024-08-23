@@ -146,8 +146,8 @@ function animate(timestamp){
     ravens = ravens.filter(object=> !object.markedfordeletion);
     explosions = explosions.filter(object=> !object.markedfordeletion);
 
-    if(!gameOver)requestAnimationFrame(animate);
-    else drawGameOver();
+    requestAnimationFrame(animate);
+    
 }
 
 animate(0);
